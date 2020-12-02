@@ -99,4 +99,9 @@ public class PaymentController {
     public String getPaymentLB(){
         return port;
     }
+
+    @GetMapping(value = "/payment/zipkin")
+    public String paymentZipkin(){
+        return "hi,i am paymentZipkin server fall back , welcome ! O(∩_∩)O哈哈~";
+    }
 }
